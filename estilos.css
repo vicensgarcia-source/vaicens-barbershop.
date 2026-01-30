@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* LOGO */
+.logo {
+  width: 180px;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+/* HEADER */
+header {
+  padding: 70px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.grande {
+  font-size: 1.2rem;
+}
+
+/* SECCIONES */
+section {
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.gris {
+  background: #f2f2f2;
+}
+
+/* SERVICIOS */
+.servicio {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* ANIMACIONES */
+.animar {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.animar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* BOTONES FLOTANTES */
+.whatsapp, .llamar {
+  position: fixed;
+  right: 20px;
+  background: #000;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp {
+  bottom: 20px;
+}
+
+.llamar {
+  bottom: 80px;
+}
+
+/* BOTÓN MODO OSCURO */
+.modo {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* MODO OSCURO */
+body.oscuro {
+  background: #111;
+  color: #fff;
+}
+
+body.oscuro .btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+body.oscuro .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+body.oscuro .gris {
+  background: #1e1e1e;
+}
+
+body.oscuro .logo {
+  filter: invert(1);
+}
